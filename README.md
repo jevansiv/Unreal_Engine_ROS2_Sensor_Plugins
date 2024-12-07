@@ -1,30 +1,32 @@
 ## Sensor Configuration
 
-The ROWMow Sim project integrates an advanced sensor suite designed for roadside mowing tasks. The setup enables precise navigation and obstacle avoidance through a combination of sensors and custom ROS2 nodes. These configurations are tailored for virtual and real-world applications, with emphasis on replicating real-world environmental conditions in the simulation.
+This sensor suite is built upon **rclUE** and **RapyutaSimulationPlugins** to deliver a versatile and adjustable sensor array, simulating sensors and autonomous systems in **Unreal Engine 5.1** using **ROS2 Humble** on **Ubuntu 22.04**.
 
 ### Virtual Sensor Suite
-The virtual setup includes:
-- **GPS**: Simulated GPS for positioning and navigation.
-- **IMU**: Simulated IMU data for heading and orientation.
-- **LiDAR**: High-resolution Ouster LiDAR simulation for obstacle detection and environmental mapping.
-- **Stereo Camera (OAK-D)**: Provides depth perception and object recognition capabilities for obstacle avoidance.
-
-### Real-World Sensor Suite
-The real-world setup mirrors the simulation with physical equivalents:
-- **High-precision GPS (e.g., RTK GPS)** for accurate positioning.
-- **IMU (Inertial Measurement Unit)** for reliable heading estimation.
-- **Ouster LiDAR** for 3D environmental perception.
-- **OAK-D Stereo Camera** for enhanced depth sensing and obstacle recognition.
-
-### Configuration Highlights
-- **Sensor Fusion**: Data from GPS, IMU, LiDAR, and cameras are fused for robust navigation and obstacle detection.
-- **Noise Modeling**: The simulation includes configurable noise levels for each sensor to mimic real-world conditions.
-- **Adjustable Sampling Rates**: Sampling rates for each sensor can be modified to match specific platform requirements.
+The virtual setup includes the following sensors:  
+- **GPS**: Simulated GPS for positioning and navigation.  
+- **IMU**: Provides heading and orientation data.  
+- **LiDAR**: High-resolution Ouster LiDAR for obstacle detection and environmental mapping.  
+- **Depth Camera**: Enables depth perception for object recognition and obstacle avoidance.  
+- **RGB Camera**: Captures high-quality visual data for scene analysis.  
+- **FLIR Camera**: Simulates thermal imaging for advanced perception in various environments.  
+- **Contact Sensors**: Detect physical interaction with objects in the environment.  
+- **3D LiDAR**: Simulates full-range 3D mapping capabilities.  
+- **2D LiDAR**: Provides planar mapping and obstacle detection.  
+- **Ultrasonic Sensors**: Simulate short-range distance measurements.  
+- **Radar**: Detects objects using radio waves, ideal for poor visibility conditions.  
 
 ### Simulation Reference
-The configurations and methodologies for integrating these sensors into the ROWMow Sim platform are detailed in the paper:  
+Details on integrating these sensors into the ROWMow Sim platform can be found in the referenced work:  
 **Mardikes, M., Evans, J., Brown, E., Sprague, N., Wiegman, T., Supe, S., & Shaver, G. (2024). *ROWMow Sim: A Digital-Twin Robotic Simulator for Testing Autonomous Roadside Mowers.* Unpublished manuscript.**
 
-This citation provides in-depth insights into the design and implementation of the sensor models and their integration into the digital-twin environment.
+This citation provides a comprehensive overview of the sensor models' design and their integration into the digital-twin robotic testing environment.
 
----
+### BibTeX Citation
+```bibtex
+@unpublished{mardikes2024rowmowsim,
+  author    = {Mardikes, M. and Evans, J. and Brown, E. and Sprague, N. and Wiegman, T. and Supe, S. and Shaver, G.},
+  title     = {ROWMow Sim: A Digital-Twin Robotic Simulator for Testing Autonomous Roadside Mowers},
+  year      = {2024},
+  note      = {Unpublished manuscript}
+}
