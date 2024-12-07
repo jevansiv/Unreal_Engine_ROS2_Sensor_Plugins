@@ -2,6 +2,8 @@
 
 This sensor suite is built upon **[rclUE](https://github.com/rapyuta-robotics/rclUE/tree/UE5_devel_humble)** and **[RapyutaSimulationPlugins](https://github.com/rapyuta-robotics/RapyutaSimulationPlugins/tree/devel)** to deliver a versatile and adjustable sensor array, simulating sensors and autonomous systems in **Unreal Engine 5.1** using **ROS2 Humble** on **Ubuntu 22.04**. The FLIR sensor was implemented to the ROS2 by implementing the method described by **Vemulapalli et al. (2023)** [full reference below](#reference).
 
+![Sensor List Image](Images/Sensor_Samples.png)
+
 ### Virtual Sensor Suite
 The virtual setup includes the following sensors:  
 - **GPS**: Simulated GPS for positioning and navigation.  
