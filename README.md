@@ -1,6 +1,6 @@
 ## Sensor Configuration
 
-This sensor suite is built upon **[rclUE](https://github.com/rapyuta-robotics/rclUE/tree/UE5_devel_humble)** and **[RapyutaSimulationPlugins](https://github.com/rapyuta-robotics/RapyutaSimulationPlugins/tree/devel)** to deliver a versatile and adjustable sensor array, simulating sensors and autonomous systems in **Unreal Engine 5.1** using **ROS2 Humble** on **Ubuntu 22.04**.
+This sensor suite is built upon **[rclUE](https://github.com/rapyuta-robotics/rclUE/tree/UE5_devel_humble)** and **[RapyutaSimulationPlugins](https://github.com/rapyuta-robotics/RapyutaSimulationPlugins/tree/devel)** to deliver a versatile and adjustable sensor array, simulating sensors and autonomous systems in **Unreal Engine 5.1** using **ROS2 Humble** on **Ubuntu 22.04**. The FLIR sensor was implemented to the ROS2 by implementing the method described by **Vemulapalli et al. (2023)** [full reference below](#reference).
 
 ### Virtual Sensor Suite
 The virtual setup includes the following sensors:  
@@ -30,3 +30,7 @@ This citation provides a comprehensive overview of the sensor models' design and
   year      = {2024},
   note      = {Unpublished manuscript}
 }
+```
+### Reference
+Vemulapalli, S. S. T., Rahi, A., Mullins, S. D., Wasfy, H., El-Mounayri, H., & Anwar, S. (2023, October). IR Sensor Modeling in Unreal Engine for Autonomous Vehicle Applications. In ASME International Mechanical Engineering Congress and Exposition (Vol. 87639, p. V006T07A071). American Society of Mechanical Engineers.
+
